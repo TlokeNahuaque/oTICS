@@ -1,0 +1,235 @@
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"><html lang="es">
+	<title>Inicio</title>
+    <link href="../CSS/styleindex.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a84d99523.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://codepen.io/z-/pen/a8e37caf2a04602ea5815e5acedab458.js"></script>   
+    
+</head>
+  
+<body>
+  <header id="header" class="header-default">
+
+    <div id="toggle-menu">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+
+    <nav class="menu-principal">
+      <ul>
+        <li>
+          <i style="font-size: 1.3em;" class="fa fa-map"></i>
+          <a href="Mapas.html" title="Mapas">Mapas</a>
+          <br>
+          <div class="hr"></div>
+        </li>
+        <li>
+          <i style="font-size: 1.3em;" class="fa fa-person-chalkboard"></i>
+          <a href="Prevencion.html" title="Prevención">Prevención</a>
+          <br>
+          <div class="hr"></div>
+        </li>
+        <li>
+          <i style="font-size: 1.3em;" class="fa fa-money"></i>
+          <a href="Donaciones.html" title="Donaciones">Donaciones</a>
+          <br>
+          <div class="hr"></div>
+        </li>
+        <li>
+          <i style="font-size: 1.3em;" class="fa fa-user-pen"></i>
+          <a href="Voluntarios.html" title="Registro de Voluntarios">Registro de Voluntarios</a>
+          <br>
+          <div class="hr"></div>
+        </li>
+        <li>
+          <i style="font-size: 1.3em;" class="fa fa-magnifying-glass"></i>
+          <a href="Localizacion.html" title="Localizacion">Localización de Personas</a>
+          <br>
+          <div class="hr"></div>
+        </li>
+        <li>
+          <i style="font-size: 1.3em;" class="fa fa-house-chimney-crack"></i> <i class="fa-solid "></i>
+          <a href="Proyecto.html" title="Proyecto de Reconstrucción">Proyecto de Reconstrucción</a>
+          <br>
+          <div class="hr"></div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="body-contenido">     
+    <div class="container-header">
+      <div class="container1">
+        <a href="Principal.html">
+          <img src="..\Imagenes\Encabezado.png" style="max-height:65px;">
+        </a>
+      </div>
+      <div class="container2">
+        <ul>
+          <a><strong>Bienvenid@</strong></a>
+          <br>
+          <i class="fecha-text">
+            <script>
+              function makeArray() {
+                for (i = 0; i < makeArray.arguments.length; i++) this[i + 1] = makeArray.arguments[i]
+              }
+              var months = new makeArray('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+              var date = new Date();
+              var day = date.getDate();
+              var month = date.getMonth() + 1;
+              var yy = date.getYear();
+              var year = (yy < 1000) ? yy + 1900 : yy;
+              document.write("Hoy es " + day + " de " + months[month] + " del " + year);
+            </script>
+          </i>
+        </ul>
+      </div>
+    </div>  
+
+  
+
+    <main>
+      <div class="container">
+        <div class="Title">
+          <h1>Sistema de Prevención de Desastres</h1>
+        </div>
+
+        <div id="Level-1">
+          <div class="app"><div style="display:none;" class="cardList"><button style="display:none;" class="cardList__btn btn btn--left"><div style="display:none;" class="icon"><svg style="display:none;" ><use xlink:href="#arrow-left"></use></svg></button><div style="display: hidden;" class="cards__wrapper"><div  style="display: hidden;" class="card current--card"><div style="display: hidden;"class="card__image"><img src="#" alt="" /></div></div><div class="card next--card"><div class="card__image"><img src="#" alt="" /></div></div><div class="card previous--card"><div class="card__image"><img src="" alt="" /></div></div></div><button class="cardList__btn btn btn--right"><div class="icon"><svg><use xlink:href="#arrow-right"></use></svg></div></button></div><div class="infoList"><div class="info__wrapper"><div class="info current--info"></div><div class="info next--info"></div><div class="info previous--info"></div></div></div><div class="app__bg"><div class="app__bg__image current--image"><img src="#" alt="" /></div><div class="app__bg__image next--image"><img src="#" alt="" /></div><div class="app__bg__image previous--image"><img src="#" alt="" /></div></div></div><div class="loading__wrapper"><div class="loader--text">Cargando...</div><div class="loader"><span></span></div></div>
+        </div>
+
+        <div id="Level-2">
+          <div class="Content">
+            <div class="Area">
+              Acciones Preventivas
+            </div>
+  
+            <div class="Panel">
+              <div class="Content2">
+                <div class="Image-normal">
+                  <a href="..\Docs\Mapas.html">
+                    <img width="355" height="250" src="..\Imagenes\1.png" alt="Mapas"/>
+                  </a>
+                </div>
+                <div class="Subtitle">
+
+                </div>
+              </div>
+
+              <div class="Content2">
+                <div class="Image-normal">
+                  <a href="..\Docs\Prevencion.html">
+                    <img width="355" height="250" src="..\Imagenes\2.png" alt="Prevención"/>
+                  </a>
+                </div>
+                <div class="Subtitle">
+                </div>
+              </div>
+
+            </div>          
+          
+          </div>
+        </div>
+
+        <div id="Level-3">
+          <div class="Content">
+            <div class="Area">
+              Acciones Durante
+            </div>
+
+            <div class="Panel">
+              <div class="Content2">
+                <div class="Image-normal">
+                  <a href="..\Docs\Donaciones.html">
+                    <img width="355" height="250" src="..\Imagenes\3.png" alt="Donaciones"/>
+                  </a>
+                </div>
+                <div class="Subtitle">
+                </div>
+              </div>
+            
+              <div class="Content2">
+                <div class="Image-normal">
+                  <a href="..\Docs\Voluntarios.html">
+                    <img width="355" height="250" src="..\Imagenes\4.png" alt="Voluntarios"/>
+                  </a>
+                </div>
+                <div class="Subtitle">
+                </div>
+              </div>
+
+              <div class="Content2">
+                <div class="Image-normal">
+                  <a href="..\Docs\Localizacion.html">
+                    <img width="355" height="250" src="..\Imagenes\5.png" alt="Localización"/>
+                  </a>
+                </div>
+                <div class="Subtitle">
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+
+        <div id="Level-4">
+          <div class="Content">
+            <div class="Area">
+              Acciones Post-Desastre
+            </div>
+            
+            <div class="Panel">
+              <div class="Content2">
+                <div class="Image-normal">
+                  <a href="..\Docs\Proyecto.html">
+                    <img width="355" height="250" src="..\Imagenes\6.png" alt="Proyecto"/>
+                  </a>
+                </div>
+                <div class="Subtitle">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <img src="..\Imagenes\Logo-White.png" style="max-height:75px; margin-left: -45px;"><br><br><br>
+          <a style="font-weight: 700;">Universidad Rosario Castellanos</a><br>
+          Licenciatura en Tecnologías de Información y Comunicación<br><br>
+          Dirección: Avenida 506 Colonia San Juan de Aragón II Sección, <br>
+          Alcaldía Gustavo A. Madero C.P. 07969, Ciudad de México<br><br>
+          <a style="font-weight: 700;">Boot Camp (Tercera Edición)</a><br><br>
+          Equipo:<br><br> 
+          <img src="..\Imagenes\oTics.jpg" style="max-height:65px;"><br><br>
+          Integrantes: <br><br>
+          • Chavarría Acosta Ulises<br>
+          • Díaz Angulo Luis Ernesto<br>
+          • Hernández Hernández Óscar<br>
+          • López Portillo Cinthya Aranzazú<br>
+          • Roa Contreras Edgar<br>
+        </footer>
+
+      </div>
+    </main>
+  </div>
+
+
+  
+
+  <script src="..\JS\diagramas.js"></script>
+  <script src="..\JS\promedios.js"></script>
+  <script src="../JS/index.js"></script>
+
+</body>
+
+
+
+</html>
