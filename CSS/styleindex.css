@@ -41,7 +41,7 @@ button {
 	border-radius: 5px;
 	margin-top: 20px;
 	background: none;
-	height: 35px;
+	height: 30px;
 	color: var(--primario);
 	padding: 0 50px;
 	align-items: center;
@@ -50,6 +50,8 @@ button {
 	cursor: pointer;
 	transition: .3s ease all;
 	outline: none;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 
@@ -66,14 +68,82 @@ input{
 	background: none;
 	height: 35px;
 	color: var(--primario);
-	padding-left: 25px;
+	padding-left: 5px;
 	align-items: center;
-	justify-content: end;
 	border: 1px solid var(--borde);
 	cursor: pointer;
 	transition: .3s ease all;
-	outline: none;
 }
+
+textarea{
+  font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-top: 20px;
+	background: none;
+	height: 35px;
+	color: var(--letra);
+	padding-left: 5px;
+	align-items: center;
+	border: 1px solid var(--borde);
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+
+
+select{
+  font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-top: 20px;
+	background: none;
+	height: 35px;
+	color: var(--letra);
+	align-items: center;
+	border: 1px solid var(--borde);
+	cursor: pointer;
+	transition: .3s ease all;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+label{
+  font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-top: 20px;
+	background: none;
+	height: 35px;
+	color: var(--letra);
+	align-items: center;
+	transition: .3s ease all;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.formulario{
+  text-align: left;
+}
+
+.textContent{
+  font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	color: var(--letra);
+	align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+.photoElement {
+  max-width: 25px;
+  height: 35px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
 
 .total-donado{
   font-family: "Open Sans", sans-serif;
@@ -88,7 +158,7 @@ input{
 	font-size: 25px;
   font-weight: 900;
   color: var(--letra);
-  padding:25px 0 15px 0;
+  padding:5px;
 
 }
 
@@ -255,11 +325,15 @@ div#toggle-menu span.bottom {
   -webkit-transform: scale(0.5, 0.5);
   transform: scale(0.5, 0.5);
   display: block;
+  width: 100%;
 }
 
 .container {
-  padding-left: 15px;  
-  margin-top: 65px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 5px;  
+  margin-top: 145px;
+
 }
 
 .container1 {
@@ -269,23 +343,20 @@ div#toggle-menu span.bottom {
 }
 
 .container2 {
-  margin-top: 55px;
   text-align: right;
-  padding: 25px;
-  margin-left: 25%;
-  letter-spacing: 1px;
+   letter-spacing: 1px;
   line-height:25px;
-
+  margin: 15px;
+  padding-right: 25%px;
 }
 
 .container-header {
-  padding:15px;
-  height: 10%;
-  display: flex;
-  position: relative;
+  padding: 25px;
+  height: 12%;
+  position: absolute;
   align-items: center;
-  margin: 15px;
-  
+  width: 90%;
+
 }
 
 .Content {
@@ -311,21 +382,17 @@ div#toggle-menu span.bottom {
 }
 
 .title {
-  padding: 0 99px;
   vertical-align: middle;
   padding-left: 1.4em;
-  margin-right: auto;
-  margin-left: 0;
-  padding-left: 0 9px;
-  padding-right: auto;
   color: #fff;
   background-color: var(--primario);
   width: 90%;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2em;
+  font-size: 16px;
   border-radius: 25px;
   position: relative;
   align-items: center;
+
 }
 
 .subtitle {
@@ -339,6 +406,7 @@ div#toggle-menu span.bottom {
   border-radius: 25px;
   position: relative;
   align-items: center;
+  margin-bottom: 35px;
 }
 
 .TextBanner {
@@ -710,3 +778,48 @@ iframe{
 }
 
 
+@media only screen and (max-width: 800px) {
+  /* Ajustes para pantallas más pequeñas */
+
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    margin-top: 40px;    
+    display: inline;
+  }
+
+  .container1,
+  .container2 {
+    margin-top: 40px;
+    
+    margin-left: 0;
+
+
+  }
+
+  .Content,
+  .Content2 {
+    margin-left: 5px;
+    width: 90%;
+  }
+
+  .header-activo .menu-principal {
+    padding: 10px;
+  }
+
+  .header-activo #toggle-menu {
+    left: 10px;
+  }
+
+  .cardList {
+    width: calc(2 * var(--card-width));
+  }
+
+  .infoList {
+    width: calc(2 * var(--card-width));
+  }
+
+
+}

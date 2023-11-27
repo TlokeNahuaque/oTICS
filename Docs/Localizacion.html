@@ -3,7 +3,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"><html lang="es">
-	<title>Voluntarios</title>
+	<title>Localización de Familiares</title>
     <link href="../CSS/styleindex.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4a84d99523.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
@@ -108,15 +108,96 @@
         <div id="Level-2">
           <div class="Content">
             <div class="Area">
-              Muro de Localización
+              Agrega la fotografía de tu familiar
             </div>
   
             <div class="Panel2">
 
             <div class="Content2">
-              <div class="Subtitle">
-                Muro
+
+
+
+              <div class="formulario">
+              <form id="missingPersonForm">
+            
+                <label for="fullName">Nombre Completo:</label>
+                <input style="width:700px;" type="text" id="fullName" name="fullName" required>
+                <br>
+
+                <label for="references">Referencias:</label>
+                <textarea style="width:750px; height: 65px;" id="references" name="references" rows="4" required></textarea>
+                <br>
+
+                <label for="phone">Tel. Contacto:</label>
+                <input style="width:250px;" type="tel" id="phone" name="phone" required>
+
+
+                <label for="photo">Inserta Fotografía:</label>
+                <input style="color:var(--Letra)" type="file" id="photo" accept="image/*" required><br>
               </div>
+            
+               
+                <button type="button" onclick="addPhoto()">Guardar</button>
+            </form>
+
+            </div>
+          </div>
+        </div>
+
+            <div class="Content">
+              <div class="Area">
+                Muro de Localización
+              </div>
+    
+              <div class="Panel2">
+  
+              <div class="Content2">
+  
+  
+  
+            
+            <div class="formulario">
+            <div id="gallery"></div>
+            
+            <script>
+                function addPhoto() {
+                    const photoInput = document.getElementById("photo");
+                    const fullNameInput = document.getElementById("fullName");
+                    const referencesInput = document.getElementById("references");
+                    const phoneInput = document.getElementById("phone");
+                    const gallery = document.getElementById("gallery");
+            
+                    // Valida que se haya seleccionado una imagen
+                    if (photoInput.files.length === 0) {
+                        alert("Por favor, seleccione una imagen.");
+                        return;
+                    }
+            
+                    // Crea elementos para mostrar la foto y las referencias
+                    const photoElement = document.createElement("img");
+                    const referencesElement1 = document.createElement("p");
+                    const referencesElement2 = document.createElement("p");
+                    const referencesElement3 = document.createElement("p");
+            
+                    // Asigna la imagen y las referencias a los elementos creados
+                    
+                    photoElement.src = "../Imagenes/Foto.png";
+                    referencesElement1.textContent = `Nombre: ${fullNameInput.value}`+`\n`;
+                    referencesElement2.textContent = `Referencias: ${referencesInput.value}`+`\n`;
+                    referencesElement3.textContent = `Contacto: ${phoneInput.value}`+`\n`;
+            
+                    // Limpia el formulario
+                    document.getElementById("missingPersonForm").reset();
+            
+                    // Agrega la foto y referencias al muro
+                    gallery.appendChild(photoElement);
+                    gallery.appendChild(referencesElement1);
+                    gallery.appendChild(referencesElement2);
+                    gallery.appendChild(referencesElement3);
+
+                }
+            </script>
+            </div>
 
             </div>
           
