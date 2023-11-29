@@ -33,6 +33,7 @@ footer{
   margin-left: -10%;
   padding: 25px 0 35px 12%;
   font-size: 15px;
+  display: inline;
 }
 
 button {
@@ -155,11 +156,46 @@ label{
 
 .Comentario{
   font-family: "Open Sans", sans-serif;
-	font-size: 25px;
+	font-size: 20px;
   font-weight: 900;
   color: var(--letra);
   padding:5px;
 
+}
+
+.Comentario2{
+  font-family: "Open Sans", sans-serif;
+	font-size: 21px;
+  font-weight: 600;
+  color: var(--letra);
+  padding:5px;
+
+}
+
+.footer-content{
+  display: flex;
+  margin-top: -35px;
+  padding-left: 25px;
+  color:#fff;
+}
+
+.footer-columna{
+  font-family: "Open Sans", sans-serif;
+	font-size: 13px;
+  color: var(--letra);
+  padding:25px 0 15px 0;
+  text-align: left;
+  color:#fff;
+}
+
+.footer-columna2{
+  font-family: "Open Sans", sans-serif;
+	font-size: 13px;
+  color: var(--letra);
+  padding:35px;
+  padding-top: 130px;
+  text-align: left;
+  color:#fff;
 }
 
 .deducciones{
